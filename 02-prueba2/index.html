@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba2</title>
+    <link rel="stylesheet" href="assets/scss/prueba2.css">
+</head>
+<body>
+     <div class="container">
+        <div class="row">
+         <div class="col-12 texto-encabezado">
+            <h2>Evaluación parte 2</h2>
+            <p>Ingresa un contenido que quieras reflejar.</p>
+         </div>
+         <table class="table table-bordered">
+            <th>Titulo</th>
+            <th>Descripción</th>
+          </table>
+        </div>
+     </div>
+    <!-- Caja Alerta -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-6 caja" id="liveAlertPlaceholder">                        
+                        <button class="btn btn-primary" id="liveAlertBtn" type="button" id="alert">Alerta</button>                        
+                    </div>
+                    <!-- Caja Poppover -->
+                    <div class="col-md-6 caja">
+                        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Hola, soy un poppover" data-bs-content="Esto es un poppover">Popover</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 caja">
+                        <div class="toast position-fixed" data-bs-autohide="false" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                              <strong class="me-auto">toast</strong>
+                              <small>11 mins ago</small>
+                              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                              Hola, soy toast.
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 caja">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

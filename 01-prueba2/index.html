@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1/2 prueba</title>
+    <link rel="stylesheet" href="assets/scss/prueba1.css"> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-info fw-semibold fs-4" href="">L1N4T</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <section class="offcanvas offcanvas-start bg-dark" id="menuLateral" tabindex="-1">
+              <div class="offcanvas-header" data-bs-theme="dark">
+                <h5 class="offcanvas-title text-info">L1N4T</h5>
+                <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justy-content-between px-0">
+                <ul class="navbar-nav fs-5 justy-content-evenly">
+                    <li class="nav-item p-3 py-md-1"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item p-3 py-md-1"><a class="nav-link" href="">Projects</a></li>
+                    <li class="nav-item p-3 py-md-1"><a class="nav-link" href="">About</a></li>
+                    <li class="nav-item p-3 py-md-1"><a class="nav-link" href="">Contact</a></li>
+                </ul>
+              </div>
+            </section>
+        </div>
+
+    </nav>
+
+    <div class="container my-5">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/pexels-therato-3573603.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+              <div class="carousel-item">
+                <img src="assets/img/pexels-therato-9941412.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/pexels-tobiasbjorkli-1938351.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+   
+   <!-- No me funciono Toast -->
+   
+    <div class="toast position-fixed" data-bs-autohide="false" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">MSN</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hola, que tal? 😊
+        </div>
+      </div>
+   
+   
+
+  <!-- Popover -->
+    <div class="popper">
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Info importante" data-bs-content="Hay que ir a comer">Click para más información
+        </button>
+    </div>
+    
+    
+    
+    <script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
